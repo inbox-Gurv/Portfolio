@@ -10,6 +10,15 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>About Me | Portfolio</title>
+    <!-- quick theme initialization to avoid flicker -->
+    <script>
+        (function(){
+            const saved = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const theme = saved ? saved : (prefersDark ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
 </head>
 <body>
 
@@ -24,6 +33,11 @@
             <!-- MENU TOGGLE (Mobile) -->
             <div class="menu-toggle" id="menu-toggle">
                 <i class="fas fa-bars"></i>
+            </div>
+
+            <!-- THEME TOGGLE -->
+            <div class="theme-toggle" id="theme-toggle" title="Toggle dark/light mode" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
             </div>
 
             <!-- NAV LINKS -->
@@ -56,6 +70,7 @@
             Have a project in mind or want to work together?
             Feel free to send me a message.
         </p>
+        
 
         <div class="contact-container">
             <form id="contactForm" class="contact-form">

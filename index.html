@@ -10,6 +10,15 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Home | Portfolio</title>
+    <!-- quick theme initialization to avoid flicker -->
+    <script>
+        (function(){
+            const saved = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const theme = saved ? saved : (prefersDark ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
 </head>
 <body>
 
@@ -24,6 +33,11 @@
             <!-- MENU TOGGLE (Mobile) -->
             <div class="menu-toggle" id="menu-toggle">
                 <i class="fas fa-bars"></i>
+            </div>
+
+            <!-- THEME TOGGLE -->
+            <div class="theme-toggle" id="theme-toggle" title="Toggle dark/light mode" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
             </div>
 
             <!-- NAV LINKS -->
@@ -72,7 +86,7 @@
             </div>
 
             <div class="social-icons">
-                <a href="https://github.com/dashboard" target="_blank">
+                <a href="https://github.com/your-username" target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
                 <a href="#" target="_blank">

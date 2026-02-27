@@ -10,6 +10,15 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Projects | Portfolio</title>
+    <!-- quick theme initialization to avoid flicker -->
+    <script>
+        (function(){
+            const saved = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const theme = saved ? saved : (prefersDark ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
 </head>
 <body>
 
@@ -24,6 +33,11 @@
             <!-- MENU TOGGLE (Mobile) -->
             <div class="menu-toggle" id="menu-toggle">
                 <i class="fas fa-bars"></i>
+            </div>
+
+            <!-- THEME TOGGLE -->
+            <div class="theme-toggle" id="theme-toggle" title="Toggle dark/light mode" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
             </div>
 
             <!-- NAV LINKS -->
@@ -57,6 +71,12 @@
         <div class="project-card">
             <h3>Calculator App</h3>
             <p>JavaScript based calculator application.</p>
+        </div>
+        <!-- GitHub projects link card -->
+        <div class="project-card">
+            <h3>More on GitHub</h3>
+            <p>Explore all of my repositories and open-source projects on GitHub.</p>
+            <a href="https://github.com/your-username?tab=repositories" target="_blank" class="btn-outline" style="margin-top:10px; display:inline-block;">View GitHub</a>
         </div>
     </div>
 </section>
