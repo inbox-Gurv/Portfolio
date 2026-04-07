@@ -104,7 +104,7 @@ if (form) {
 }
 
 // scroll animations
-const animatedElements = document.querySelectorAll(".section, .project-card, .skill");
+const animatedElements = document.querySelectorAll(".section, .project-card, .skill, .skill-card, .info-card, .card");
 animatedElements.forEach(el => el.classList.add("fade-in"));
 
 window.addEventListener("scroll", () => {

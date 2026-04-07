@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Home | Portfolio</title>
     <!-- quick theme initialization to avoid flicker -->
     <script>
@@ -56,14 +59,13 @@
 
 <!-- HERO SECTION -->
 <section id="home" class="hero">
-    <div class="hero-container">
+    <div class="container hero-grid">
 
         <!-- LEFT CONTENT -->
         <div class="hero-content">
-            <h4 class="intro">Hello 👋 I'm</h4>
-
+            <div class="eyebrow">Available for freelance & full-time</div>
             <h1>
-                Gaurav <span>Kushwaha</span>
+                Hello, I'm <span>Gaurav Kushwaha</span>
             </h1>
 
             <h2>
@@ -71,34 +73,52 @@
             </h2>
 
             <p>
-                I design and develop modern, responsive, and high-performance
-                websites that help businesses grow and stand out online.
+                I craft high-performing, visually rich web experiences that balance speed,
+                storytelling, and conversion. Let's build something users will remember.
             </p>
 
-            <div class="hero-buttons">
-                <button onclick="scrollToSection('contact')" class="btn-primary">
-                    Hire Me
+            <div class="hero-actions">
+                <button onclick="scrollToSection('contact')" class="btn btn-primary">
+                    <i class="fa-solid fa-paper-plane"></i> Start a project
                 </button>
 
-                <a href="projects.html" class="btn-outline">
-                    View Projects
+                <a href="projects.html" class="btn btn-ghost">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> View projects
                 </a>
             </div>
 
+            <div class="hero-meta">
+                <div class="pill">Based in India</div>
+                <div class="pill">Remote friendly</div>
+                <div class="pill">Ships fast</div>
+            </div>
+
             <div class="social-icons">
-                <a href="https://github.com/your-username" target="_blank">
+                <a href="https://github.com/your-username" target="_blank" aria-label="GitHub">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="#" target="_blank">
+                <a href="#" target="_blank" aria-label="LinkedIn">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
-                <a href="#" target="_blank">
+                <a href="#" target="_blank" aria-label="Twitter">
                     <i class="fab fa-twitter"></i>
                 </a>
             </div>
         </div>
 
-        
+        <!-- RIGHT VISUAL -->
+        <div class="hero-visual">
+            <div class="avatar">GK</div>
+            <div class="floating-card">
+                <p class="label">Latest launch</p>
+                <h3>Fintech dashboard</h3>
+                <span class="tiny-text">Performance score 98 / 100</span>
+            </div>
+            <div class="floating-badge">
+                <span class="big-number">4+</span>
+                <span class="tiny-text">years building on the web</span>
+            </div>
+        </div>
 
     </div>
 </section>
@@ -106,11 +126,23 @@
 <!-- QUICK LINKS -->
 <section class="section light">
     <div class="link-overview">
-        <h2>Explore</h2>
+        <div class="section-head">
+            <p class="eyebrow">Shortcut</p>
+            <h2>Jump to a section</h2>
+        </div>
         <div class="link-cards">
-            <a class="card" href="about.html">About Me</a>
-            <a class="card" href="skills.html">Skills</a>
-            <a class="card" href="projects.html">Projects</a>
+            <a class="card" href="about.html">
+                <span>About</span>
+                <i class="fa-solid fa-arrow-up-right"></i>
+            </a>
+            <a class="card" href="skills.html">
+                <span>Skills</span>
+                <i class="fa-solid fa-arrow-up-right"></i>
+            </a>
+            <a class="card" href="projects.html">
+                <span>Projects</span>
+                <i class="fa-solid fa-arrow-up-right"></i>
+            </a>
         </div>
     </div>
 </section>
@@ -155,7 +187,7 @@
                     </div>
                 </div>
 
-                <button type="submit" class="btn-primary">
+                <button type="submit" class="btn btn-primary">
                     <i class="fas fa-paper-plane"></i> Send Message
                 </button>
 
@@ -168,7 +200,7 @@
 
 <!-- FOOTER -->
 <footer>
-    <p>© 2026 My Portfolio | All Rights Reserved</p>
+    <p>&copy; 2026 My Portfolio &bull; Built with care.</p>
 </footer>
 
 <!-- JS -->

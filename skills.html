@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Skills | Portfolio</title>
     <!-- quick theme initialization to avoid flicker -->
     <script>
@@ -55,40 +58,84 @@
 
 <!-- SKILLS SECTION -->
 <section id="skills" class="section light">
-    <h2>Skills</h2>
-
-    <div class="skill-bar">
-        <span>HTML</span>
-        <div class="progress">
-            <div class="progress-fill" data-width="95%"></div>
+    <div class="container">
+        <div class="section-head">
+            <p class="eyebrow">Core stack</p>
+            <h2>Skills that ship production UI</h2>
+            <p class="lede">Blend of UX craft, performant code, and the right tooling to deliver quickly.</p>
         </div>
-    </div>
 
-    <div class="skill-bar">
-        <span>CSS</span>
-        <div class="progress">
-            <div class="progress-fill" data-width="90%"></div>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-top">
+                    <span>HTML</span>
+                    <span class="percent">95%</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-fill" data-width="95%"></div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-top">
+                    <span>CSS (SCSS)</span>
+                    <span class="percent">90%</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-fill" data-width="90%"></div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-top">
+                    <span>JavaScript</span>
+                    <span class="percent">85%</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-fill" data-width="85%"></div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-top">
+                    <span>React</span>
+                    <span class="percent">80%</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-fill" data-width="80%"></div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-top">
+                    <span>WordPress</span>
+                    <span class="percent">80%</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-fill" data-width="80%"></div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-top">
+                    <span>UI prototyping</span>
+                    <span class="percent">75%</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-fill" data-width="75%"></div>
+                </div>
+            </div>
         </div>
-    </div>
 
-    <div class="skill-bar">
-        <span>JavaScript</span>
-        <div class="progress">
-            <div class="progress-fill" data-width="85%"></div>
-        </div>
-    </div>
-
-    <div class="skill-bar">
-        <span>React</span>
-        <div class="progress">
-            <div class="progress-fill" data-width="75%"></div>
-        </div>
-    </div>
-
-    <div class="skill-bar">
-        <span>WordPress</span>
-        <div class="progress">
-            <div class="progress-fill" data-width="80%"></div>
+        <div class="toolbox">
+            <p class="eyebrow">Toolbox</p>
+            <div class="pill-row">
+                <span class="pill">Figma</span>
+                <span class="pill">Git / GitHub</span>
+                <span class="pill">GSAP</span>
+                <span class="pill">REST APIs</span>
+                <span class="pill">Tailwind</span>
+            </div>
         </div>
     </div>
 </section>
@@ -132,7 +179,7 @@
                     </div>
                 </div>
 
-                <button type="submit" class="btn-primary">
+                <button type="submit" class="btn btn-primary">
                     <i class="fas fa-paper-plane"></i> Send Message
                 </button>
 
@@ -144,7 +191,7 @@
 
 <!-- FOOTER -->
 <footer>
-    <p>© 2026 My Portfolio | All Rights Reserved</p>
+    <p>&copy; 2026 My Portfolio &bull; Built with care.</p>
 </footer>
 
 <!-- JS -->
